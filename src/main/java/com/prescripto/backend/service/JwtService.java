@@ -14,7 +14,7 @@ import org.springframework.stereotype.Service;
 @Service
 public class JwtService {
 
-    @Value("${app.jwt.secret:replace-this-secret}")
+    @Value("${app.jwt.secret}")
     private String jwtSecret;
 
     private Key signingKey() {

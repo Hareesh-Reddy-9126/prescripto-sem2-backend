@@ -18,8 +18,8 @@
     <description>Prescripto backend migration to Spring Boot + MySQL</description>
 
     <properties>
-        <java.version>21</java.version>
-        <maven.compiler.release>21</maven.compiler.release>
+        <java.version>17</java.version>
+        <maven.compiler.release>17</maven.compiler.release>
         <jjwt.version>0.12.6</jjwt.version>
         <stripe.version>25.4.0</stripe.version>
         <razorpay.version>1.4.8</razorpay.version>

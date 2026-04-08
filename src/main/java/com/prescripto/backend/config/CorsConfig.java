@@ -25,13 +25,12 @@ public class CorsConfig {
             .filter(value -> !value.isEmpty())
             .collect(Collectors.toList());
 
-        if (!origins.isEmpty()) {
-            config.setAllowedOrigins(origins);
-            config.setAllowCredentials(true);
-        } else {
-            config.addAllowedOriginPattern("*");
+        if (origins.isEmpty()) {
+            origins = List.of("*");
         }
 
+        config.setAllowedOriginPatterns(origins);
+        config.setAllowCredentials(false);
         config.addAllowedHeader("*");
         config.addAllowedMethod("*");
 
