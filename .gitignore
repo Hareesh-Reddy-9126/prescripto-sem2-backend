@@ -1,0 +1,8 @@
+/node_modules
+/migration-backup
+/target
+/.mvn
+*.log
+.env
+.env.*
+!.env.example
