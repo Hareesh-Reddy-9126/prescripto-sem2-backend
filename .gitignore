@@ -7,3 +7,12 @@
 .env
 .env.*
 !.env.example
+
+# IDE metadata
+.classpath
+.factorypath
+.project
+.settings/
+
+# Local database dumps (never commit data/secrets)
+prescripto_local_*.sql
