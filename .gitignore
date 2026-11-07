@@ -16,3 +16,10 @@
 
 # Local database dumps (never commit data/secrets)
 prescripto_local_*.sql
+
+# Operational/log files
+*smoke*.log
+*startup*.log
+*stderr*.log
+*stdout*.log
+DEPLOYMENT_STATUS.md
